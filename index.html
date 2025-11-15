@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Raviraj Devadiga — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<style>
+body {background:#f4f7fb; margin:0; padding:40px; font-family:'Inter',sans-serif; transition:0.4s;}
+[data-theme='dark'] body {background:#0d1117; color:#e2e8f0;}
+.container {max-width:900px; margin:auto;}
+.card {background:white; padding:25px; border-radius:12px; margin-top:20px; transition:0.3s;}
+[data-theme='dark'] .card {background:#161b22;}
+.header-img {width:120px; height:120px; border-radius:12px; object-fit:cover;}
+.skill {background:#e7f2ff; padding:6px 12px; border-radius:999px; margin:4px; display:inline-block;}
+.company-logo {width:70px; margin-right:10px; vertical-align:middle;}
+.toggle {position:fixed; top:20px; right:20px; background:#0066cc; color:white; padding:10px 14px; border-radius:30px; cursor:pointer;}
+</style>
+</head>
+<body>
+
+<div class="toggle" onclick="toggleTheme()"><i class="bi bi-moon-stars"></i> Theme</div>
+
+<main class="container">
+
+<header data-aos="fade-up" style="display:flex;gap:20px;align-items:center;">
+<img src="raviraj_mypic.png" class="header-img">
+<div>
+<h1 style="margin:0;font-family:'Poppins';">Raviraj Devadiga</h1>
+<p>Business Intelligence Manager · Mumbai, India</p>
+<a href="https://www.linkedin.com/in/raviraj-devadiga-23b6b9154/" class="skill"><i class="bi bi-linkedin"></i> LinkedIn</a>
+<a href="Raviraj_Devadiga_CV.pdf" class="skill"><i class="bi bi-file-earmark-pdf"></i> PDF CV</a>
+</div>
+</header>
+
+<section class="card" data-aos="fade-up">
+<h2>Profile</h2>
+<p>Business Intelligence & MIS professional with 12+ years of experience in wealth management, analytics, automation, Tableau dashboards, and data governance.</p>
+</section>
+
+<section class="card" data-aos="fade-up">
+<h2>Experience</h2>
+
+<p><img src="julius.png" class="company-logo"><strong>Business Intelligence Manager — Julius Baer</strong> (2024–Present)</p>
+<p><img src="360one.png" class="company-logo"><strong>Manager MIS — 360 ONE Wealth</strong> (2020–2024)</p>
+<p><img src="lt.png" class="company-logo"><strong>Assistant Manager — L&T Capital Markets</strong> (2017–2020)</p>
+<p><img src="axis.png" class="company-logo"><strong>MIS Analyst — Axis Securities</strong> (2016–2017)</p>
+<p><img src="eclerx.png" class="company-logo"><strong>Senior Analyst — eClerx</strong> (2012–2016)</p>
+
+</section>
+
+<section class="card" data-aos="fade-up">
+<h2>Projects</h2>
+
+<div class="card" data-aos="zoom-in">
+<h3>India Tableau Business Performance Dashboard</h3>
+<p>Built full BI dashboard with global team collaboration.</p>
+</div>
+
+<div class="card" data-aos="zoom-in">
+<h3>Regulatory Certification System</h3>
+<p>Created centralized Workday-based certification tracker.</p>
+</div>
+
+<div class="card" data-aos="zoom-in">
+<h3>MIS Automation</h3>
+<p>40–60% reduction in manual MIS effort via automation.</p>
+</div>
+</section>
+
+<section class="card" data-aos="fade-up">
+<h2>Skills</h2>
+<span class="skill">Tableau</span><span class="skill">Power BI</span>
+<span class="skill">SQL</span><span class="skill">Python</span>
+<span class="skill">Linux</span><span class="skill">Automation</span>
+</section>
+
+</main>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script>
+function toggleTheme(){
+ const html=document.documentElement;
+ html.dataset.theme = html.dataset.theme==="light" ? "dark" : "light";
+}
+</script>
+
+</body>
+</html>
